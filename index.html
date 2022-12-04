@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js">
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  margin: 0;
+  font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #CFD8DC;
+  text-align: left;
+  background-color: #000000; }
+
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+
+a {
+  color: #1de9b6;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+  a:hover {
+    color: #0e9271;
+    text-decoration: none; }
+
+img {
+  vertical-align: middle;
+  border-style: none; }
+
+
+
+.hero-particles-container {
+        position: absolute;
+        top: 100px;
+        bottom: 40%;
+        left: 70px;
+        right: 0;
+      }
+
+
+
+      .has-animations.is-loaded .hero-particles-container,
+      .has-animations.is-loaded .hero .mockup-bg {
+        -webkit-animation: heroFadeIn 0.6s ease forwards 0.45s;
+        animation: heroFadeIn 0.6s ease forwards 0.45s;
+      }
+
+
+
+      .ana::before {
+            pointer-events: none;
+            content: "";
+            position: absolute;
+            background: rgb(0 243 255);
+            top: -1%;
+            left: 670px;
+            z-index: 5;
+            width: 1%;
+            height: 23px;
+            transform: perspective(1.3em) rotateX(63deg) scale(1, 1.35);
+            filter: blur(0.3em);
+            animation: animate 31.5s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                background: rgb(0, 242, 255);
+            }
+
+            5% {
+                background: rgb(23, 158, 199);
+            }
+
+            10% {
+                background: rgb(25, 124, 180);
+            }
+
+            15% {
+                background:  rgb(17, 77, 146);
+            }
+            20% {
+                background:  rgb(0, 84, 240);
+            }
+
+            25% {
+                background: rgb(65, 37, 168);
+            }
+
+            30% {
+                background: rgb(77, 59, 179);
+            }
+
+            35% {
+                background: rgb(124, 57, 201);
+            }
+
+            40% {
+                background: rgb(195, 0, 255);
+            }
+
+            45% {
+                background: rgb(218, 92, 230);
+            }
+
+            50% {
+                background: rgb(112, 11, 126);
+            }
+
+            55% {
+                background: rgb(255, 0, 212);
+            }
+
+            60% {
+                background: rgb(95, 19, 82);
+            }
+
+            65% {
+                background: rgb(83, 23, 75);
+            }
+
+            70% {
+                background: rgb(13, 62, 95);
+            }
+
+            75% {
+                background: rgb(19, 106, 112);
+            }
+
+            80% {
+                background: rgb(10, 156, 120);
+            }
+
+            85% {
+                background: rgb(0, 255, 179);
+            }
+
+            90% {
+                background: rgb(37, 136, 70);
+            }
+
+            95% {
+                background: rgb(30, 163, 86);
+            }
+
+            100% {
+                background: rgb(3, 255, 66);
+            }
+        }
+
+
+        .a6{
+            font-weight: 800;
+            position: relative;
+            width: 144%;
+            text-align-last: center;
+            left: -181px;
+        }
+
+.a1{
+    display: flex;
+    width: 10%;
+    position: absolute;
+    z-index: 5;
+    left: 615px;
+    margin-top: 49px;
+}
+.amain1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+}
+.footer-particles-container{
+    position: relative;
+    bottom: 286px;
+}
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  text-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1.5rem 1.25rem;
+  }
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.0625rem;
+  padding-bottom: 0.0625rem;
+  margin-right: 1.25rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap; }
+  .navbar-brand:hover, .navbar-brand:focus {
+    text-decoration: none; }
+    .navbar .navbar-brand {
+  font-size: 2.5rem;
+  font-weight: 900;
+  filter: contrast(1.5);
+  color: #1de9b6;
+  text-transform: uppercase;
+  background-clip: text;
+  background: -webkit-linear-gradient(134deg, #7c0091 0%, #00A87E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  .navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 0.3rem; }
+  .navbar-toggler:hover, .navbar-toggler:focus {
+    text-decoration: none; }
+  .navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer; }
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%; }
+
+  .bg-hero {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='#000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='#053529' cx='400' cy='400' r='500'/%3E%3Ccircle fill='#0a634d' cx='400' cy='400' r='400'/%3E%3Ccircle fill='#0e9271' cx='400' cy='400' r='300'/%3E%3Ccircle fill='#13c095' cx='400' cy='400' r='200'/%3E%3Ccircle fill='#1de9b6' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  /* background by SVGBackgrounds.com */
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative; }
+  .bg-hero:before {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    }
+  .bg-hero .container {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
+    .container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 100%;
+      } }
+      .navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  text-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  padding: 1.5rem 1.25rem;
+  }
+  .navbar > .container,
+  .navbar > .container-fluid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+
+
+        .a6 {
+    font-weight: 800;
+    position: relative;
+    width: 100%;
+    display: flex;
+    left: 0px;
+    top: 177px;
+    justify-content: center;
+}
+.heading-black {
+    font-weight: 800;
+}
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+h1, .h1 {
+    font-size: 3rem;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  max-width: 100%; }
+
+.col-auto {
+  -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+  width: auto;
+  max-width: none; }
+  .col-12 {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  max-width: 100%; }
+  .text-center {
+  text-align: center !important;
+  /* width: 908%; */
+  }
+
+  .lead {
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  width: 61%;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  left: 229px;
+  top: 165px;
+  }
+  .pt-3,
+.py-3 {
+  padding-top: 1rem !important; }
+  .btn.btn-primary:hover {
+    box-shadow: 0 8px 20px rgb(29 233 182 / 35%);
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn.btn-primary {
+    box-shadow: 0 -1px 16px rgb(148 104 225);
+    transition: all 1.2s ease-out;
+}
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #14cc9e;
+    border-color: #13c095;
+}
+.btn:hover, .btn:focus {
+    text-decoration: none;
+}
+.btn {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+.flex-row {
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+}
+.d-inline-flex {
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+}
+.btn-primary {
+    color: #11171a;
+    background-color: #1de9b6;
+    border-color: #1de9b6;
+}
+.btn {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid transparent;
+    padding: 0.55rem 1.5rem;
+    font-size: 1rem;
+    position: relative;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    transition: all 1.2s;
+    top: 176px;
+    transition: all 1.2s;
+}
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+    appearance: button;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+    border-radius: 0;
+}
+
+
+
+.btn-primary:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+    -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+    transition: all 1s;
+}
+
+
+
+    
+
+
+    </style>
+</head>
+<body>
+
+<p class="ana"></p>
+<nav class="navbar navbar-expand-md navbar-dark">
+    <a class="navbar-brand heading-black" href="index.html">
+        Montreal Institute Of Science & Technology
+
+    </a>
+    <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span data-feather="grid"></span>
+    </button>
+
+</nav>
+</div>
+</section>
+<div class="amain1">
+<img class="a1" src="./Assets/science-logo-design-template_636083-92-removebg-preview.png" alt="">
+</div>
+
+
+<section class="py-7 py-md-0 bg-hero" id="home">
+<div class="container">
+<div class="row vh-md-100">
+    <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
+        <h1 class="heading-black a6 text-capitalize">Automated Approach To Calculate School & College Marks</h1>
+        <p class="lead py-3">MarksGen is a platform that helps students and teachers to calculate marks & overall percentage of their marks
+            its free for everyone.</p><a href="./table.html">
+        <button class="btn btn-primary d-inline-flex flex-row align-items-center">
+            Get started now
+            <em class="ml-2" data-feather="arrow-right"></em>
+        </button></a>
+    </div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <div class="hero-particles-container">
+        <canvas id="hero-particles"></canvas>
+      </div>
+    
+    
+    <div class="footer-particles-container">
+      <canvas id="footer-particles"></canvas>
+    </div>
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    
+    <script>
+    
+    
+    
+    (function () {
+            const t = document,
+              e = t.documentElement,
+              i = t.body,
+              n = (window.sr = ScrollReveal({ mobile: !1 }));
+            e.classList.remove("no-js"),
+              e.classList.add("js"),
+              window.addEventListener("load", function () {
+                i.classList.add("is-loaded");
+              }),
+              i.classList.contains("has-animations") &&
+                window.addEventListener("load", function () {
+                  n.reveal(".feature-extended .device-mockup", {
+                    duration: 600,
+                    distance: "100px",
+                    easing: "cubic-bezier(0.215, 0.61, 0.355, 1)",
+                    origin: "bottom",
+                    viewFactor: 0.6,
+                  }),
+                    n.reveal(".feature-extended .feature-extended-body", {
+                      duration: 600,
+                      distance: "40px",
+                      easing: "cubic-bezier(0.215, 0.61, 0.355, 1)",
+                      origin: "top",
+                      viewFactor: 0.6,
+                    });
+                });
+            let s = function (t) {
+              let e = this;
+              (e.parentNode = t),
+                e.getCanvasSize(),
+                window.addEventListener("resize", function () {
+                  e.getCanvasSize();
+                }),
+                (e.mouseX = 0),
+                (e.mouseY = 0),
+                window.addEventListener("mousemove", function (t) {
+                  (e.mouseX = t.clientX), (e.mouseY = t.clientY);
+                }),
+                e.randomise();
+            };
+            (s.prototype.getCanvasSize = function () {
+              (this.canvasWidth = this.parentNode.clientWidth),
+                (this.canvasHeight = this.parentNode.clientHeight);
+            }),
+              (s.prototype.generateDecimalBetween = function (t, e) {
+                return (Math.random() * (t - e) + e).toFixed(2);
+              }),
+              (s.prototype.update = function () {
+                let t = this;
+                (t.translateX = t.translateX - t.movementX),
+                  (t.translateY = t.translateY - t.movementY),
+                  (t.posX +=
+                    (t.mouseX / (t.staticity / t.magnetism) - t.posX) /
+                    t.smoothFactor),
+                  (t.posY +=
+                    (t.mouseY / (t.staticity / t.magnetism) - t.posY) /
+                    t.smoothFactor),
+                  (t.translateY + t.posY < 0 ||
+                    t.translateX + t.posX < 0 ||
+                    t.translateX + t.posX > t.canvasWidth) &&
+                    (t.randomise(), (t.translateY = t.canvasHeight));
+              }),
+              (s.prototype.randomise = function () {
+                (this.colors = [
+                  "85,107,139",
+                  "38,141,247",
+                  "66,52,248",
+                  "255,108,80",
+                  "243, 244, 255",
+                  "96, 100, 131",
+                ]),
+                  (this.velocity = 30),
+                  (this.smoothFactor = 50),
+                  (this.staticity = 30),
+                  (this.magnetism = 0.1 + 4 * Math.random()),
+                  (this.color =
+                    this.colors[Math.floor(Math.random() * this.colors.length)]),
+                  (this.alpha = this.generateDecimalBetween(5, 10) / 10),
+                  (this.size = this.generateDecimalBetween(3, 6)),
+                  (this.posX = 0),
+                  (this.posY = 0),
+                  (this.movementX =
+                    this.generateDecimalBetween(-2, 2) / this.velocity),
+                  (this.movementY =
+                    this.generateDecimalBetween(1, 20) / this.velocity),
+                  (this.translateX = this.generateDecimalBetween(
+                    0,
+                    this.canvasWidth
+                  )),
+                  (this.translateY = this.generateDecimalBetween(
+                    0,
+                    this.canvasHeight
+                  ));
+              });
+            let a = function (t) {
+              (this.canvas = document.getElementById(t)),
+                (this.ctx = this.canvas.getContext("2d")),
+                (this.dpr = window.devicePixelRatio);
+            };
+            (a.prototype.start = function () {
+              let t = this;
+              t.canvasSize(),
+                window.addEventListener("resize", function () {
+                  t.canvasSize();
+                }),
+                (t.bubblesList = []),
+                t.generateBubbles(),
+                t.animate();
+            }),
+              (a.prototype.canvasSize = function () {
+                (this.container = this.canvas.parentNode),
+                  (this.w = this.container.offsetWidth),
+                  (this.h = this.container.offsetHeight),
+                  (this.wdpi = this.w * this.dpr),
+                  (this.hdpi = this.h * this.dpr),
+                  (this.canvas.width = this.wdpi),
+                  (this.canvas.height = this.hdpi),
+                  (this.canvas.style.width = this.w + "px"),
+                  (this.canvas.style.height = this.h + "px"),
+                  this.ctx.scale(this.dpr, this.dpr);
+              }),
+              (a.prototype.animate = function () {
+                let t = this;
+                t.ctx.clearRect(0, 0, t.canvas.clientWidth, t.canvas.clientHeight),
+                  t.bubblesList.forEach(function (e) {
+                    e.update(),
+                      t.ctx.translate(e.translateX, e.translateY),
+                      t.ctx.beginPath(),
+                      t.ctx.arc(e.posX, e.posY, e.size, 0, 2 * Math.PI),
+                      (t.ctx.fillStyle = "rgba(" + e.color + "," + e.alpha + ")"),
+                      t.ctx.fill(),
+                      t.ctx.setTransform(t.dpr, 0, 0, t.dpr, 0, 0);
+                  }),
+                  requestAnimationFrame(this.animate.bind(this));
+              }),
+              (a.prototype.addBubble = function (t) {
+                return this.bubblesList.push(t);
+              }),
+              (a.prototype.generateBubbles = function () {
+                let t = this;
+                for (let e = 0; e < t.bubbleDensity(); e++)
+                  t.addBubble(new s(t.canvas.parentNode));
+              }),
+              (a.prototype.bubbleDensity = function () {
+                return 15;
+              }),
+              window.addEventListener("load", function () {
+                const t = new a("hero-particles"),
+                  e = new a("footer-particles");
+                t.start(), e.start();
+              }),
+              (window.requestAnimFrame =
+                window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function (t) {
+                  window.setTimeout(t, 1e3 / 60);
+                });
+          })();
+    
+    
+    </script>
+    
+</body>
+</html>
